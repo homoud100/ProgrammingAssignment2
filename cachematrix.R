@@ -49,7 +49,7 @@ cacheSolve <- function(x, ...)
   ## Return a matrix that is the inverse of 'x'
   inverse_x<<- x$getInverse()
   
-  if (!is.na(inverse_x))
+  if (!is.na(inverse_x[1,1]) == TRUE)
   {
     message("getting cached data")
     return(inverse_x)
